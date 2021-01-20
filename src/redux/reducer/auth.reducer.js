@@ -1,20 +1,17 @@
 import { userActionTypes } from "../constant/userAction.types";
 
 const intialState = {
-  users: [],
+  jwt: "",
+  isLogin: undefined,
 };
 
 const authReducer = (state = intialState, action) => {
   switch (action.type) {
-    case userActionTypes.SIGNUP:
-      return {
-        ...state,
-        users: [...state.users, ...action.payload.users],
-      };
     case userActionTypes.LOGIN:
       return {
         ...state,
-        users: [...state.users, ...action.payload.users],
+        jwt: action.payload.jwt,
+        isLogin: action.payload.isLogin,
       };
     default:
       return {

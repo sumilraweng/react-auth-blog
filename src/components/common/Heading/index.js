@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 function Heading(props) {
   const children = props.children;
+
   const hTag = () => {
     switch (props.htag) {
       case "h2":

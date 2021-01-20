@@ -5,12 +5,12 @@ const userActionObjectGenerator = (actionType, payload = {}) => {
     case userActionTypes.SIGNUP:
       return {
         type: userActionTypes.SIGNUP,
-        payload: { users: [] },
+        payload: payload,
       };
     case userActionTypes.LOGIN:
       return {
         type: userActionTypes.LOGIN,
-        payload: { users: [] },
+        payload: payload,
       };
 
     default:

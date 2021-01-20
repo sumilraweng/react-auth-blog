@@ -1,0 +1,29 @@
+.navigation-sec {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  img {
+    width: 10rem;
+    height: auto;
+  }
+  .nav-container li {
+    display: inline;
+    margin: 4vw;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: #3e424b;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  & > li :hover {
+    border-bottom: 2px solid #5787ff;
+  }
+  .nav-item > a:hover {
+    color: #5787ff;
+  }
+}
